@@ -13,9 +13,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //------------------------------
+    //-----------------------
     // The framework license
-    //------------------------------
+    //-----------------------
     //
     // To test the framework in your app set the Bundle ID and license string as below.
     //
