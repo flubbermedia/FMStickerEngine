@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1455413815FC0B0D00282D5E /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1455413515FC0B0D00282D5E /* SVProgressHUD.bundle */; };
+		1455413915FC0B0D00282D5E /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1455413715FC0B0D00282D5E /* SVProgressHUD.m */; };
+		1455413B15FC0DAD00282D5E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1455413A15FC0DAD00282D5E /* AssetsLibrary.framework */; };
+		145541AB15FC261D00282D5E /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 145541A515FC261D00282D5E /* Icon-72.png */; };
+		145541AC15FC261D00282D5E /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 145541A615FC261D00282D5E /* Icon-72@2x.png */; };
+		145541AD15FC261D00282D5E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 145541A715FC261D00282D5E /* Icon.png */; };
+		145541AE15FC261D00282D5E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 145541A815FC261D00282D5E /* Icon@2x.png */; };
+		145541AF15FC261D00282D5E /* sticker-eyes.png in Resources */ = {isa = PBXBuildFile; fileRef = 145541A915FC261D00282D5E /* sticker-eyes.png */; };
+		145541B015FC261D00282D5E /* sticker-mouth.png in Resources */ = {isa = PBXBuildFile; fileRef = 145541AA15FC261D00282D5E /* sticker-mouth.png */; };
+		145541B215FC26BF00282D5E /* FMStickerEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145541B115FC26BF00282D5E /* FMStickerEngine.framework */; };
+		1455420315FC290700282D5E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1455420215FC290700282D5E /* QuartzCore.framework */; };
+		1455420E15FC2DFA00282D5E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1455420A15FC2DFA00282D5E /* CoreMedia.framework */; };
+		1455420F15FC2DFA00282D5E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1455420B15FC2DFA00282D5E /* CoreVideo.framework */; };
+		1455421015FC2DFA00282D5E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1455420C15FC2DFA00282D5E /* CoreImage.framework */; };
+		1455421115FC2DFA00282D5E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1455420D15FC2DFA00282D5E /* AVFoundation.framework */; };
+		148A652215FBB08A008C9D35 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148A652115FBB08A008C9D35 /* UIKit.framework */; };
+		148A652415FBB08A008C9D35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148A652315FBB08A008C9D35 /* Foundation.framework */; };
+		148A652615FBB08A008C9D35 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148A652515FBB08A008C9D35 /* CoreGraphics.framework */; };
+		148A652C15FBB08A008C9D35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 148A652A15FBB08A008C9D35 /* InfoPlist.strings */; };
+		148A652E15FBB08A008C9D35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 148A652D15FBB08A008C9D35 /* main.m */; };
+		148A653215FBB08A008C9D35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 148A653115FBB08A008C9D35 /* AppDelegate.m */; };
+		148A653515FBB08A008C9D35 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148A653315FBB08A008C9D35 /* MainStoryboard_iPhone.storyboard */; };
+		148A653815FBB08A008C9D35 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148A653615FBB08A008C9D35 /* MainStoryboard_iPad.storyboard */; };
+		148A653B15FBB08A008C9D35 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148A653A15FBB08A008C9D35 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1455413515FC0B0D00282D5E /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		1455413615FC0B0D00282D5E /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		1455413715FC0B0D00282D5E /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		1455413A15FC0DAD00282D5E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		145541A515FC261D00282D5E /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		145541A615FC261D00282D5E /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		145541A715FC261D00282D5E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		145541A815FC261D00282D5E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		145541A915FC261D00282D5E /* sticker-eyes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sticker-eyes.png"; sourceTree = "<group>"; };
+		145541AA15FC261D00282D5E /* sticker-mouth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sticker-mouth.png"; sourceTree = "<group>"; };
+		145541B115FC26BF00282D5E /* FMStickerEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FMStickerEngine.framework; sourceTree = "<group>"; };
+		1455420215FC290700282D5E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1455420A15FC2DFA00282D5E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		1455420B15FC2DFA00282D5E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		1455420C15FC2DFA00282D5E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		1455420D15FC2DFA00282D5E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		148A651D15FBB08A008C9D35 /* FMStickerEngineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMStickerEngineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		148A652115FBB08A008C9D35 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		148A652315FBB08A008C9D35 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		148A652515FBB08A008C9D35 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		148A652915FBB08A008C9D35 /* FMStickerEngineDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FMStickerEngineDemo-Info.plist"; sourceTree = "<group>"; };
+		148A652B15FBB08A008C9D35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		148A652D15FBB08A008C9D35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		148A652F15FBB08A008C9D35 /* FMStickerEngineDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FMStickerEngineDemo-Prefix.pch"; sourceTree = "<group>"; };
+		148A653015FBB08A008C9D35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		148A653115FBB08A008C9D35 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		148A653415FBB08A008C9D35 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		148A653715FBB08A008C9D35 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		148A653915FBB08A008C9D35 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		148A653A15FBB08A008C9D35 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		148A651A15FBB08A008C9D35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148A652215FBB08A008C9D35 /* UIKit.framework in Frameworks */,
+				148A652415FBB08A008C9D35 /* Foundation.framework in Frameworks */,
+				148A652615FBB08A008C9D35 /* CoreGraphics.framework in Frameworks */,
+				1455413B15FC0DAD00282D5E /* AssetsLibrary.framework in Frameworks */,
+				145541B215FC26BF00282D5E /* FMStickerEngine.framework in Frameworks */,
+				1455420315FC290700282D5E /* QuartzCore.framework in Frameworks */,
+				1455420E15FC2DFA00282D5E /* CoreMedia.framework in Frameworks */,
+				1455420F15FC2DFA00282D5E /* CoreVideo.framework in Frameworks */,
+				1455421015FC2DFA00282D5E /* CoreImage.framework in Frameworks */,
+				1455421115FC2DFA00282D5E /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1455413315FC0AF800282D5E /* 3dParty */ = {
+			isa = PBXGroup;
+			children = (
+				1455413415FC0B0D00282D5E /* SVProgressHUD */,
+			);
+			name = 3dParty;
+			sourceTree = "<group>";
+		};
+		1455413415FC0B0D00282D5E /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1455413515FC0B0D00282D5E /* SVProgressHUD.bundle */,
+				1455413615FC0B0D00282D5E /* SVProgressHUD.h */,
+				1455413715FC0B0D00282D5E /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		145541A415FC261D00282D5E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				145541A515FC261D00282D5E /* Icon-72.png */,
+				145541A615FC261D00282D5E /* Icon-72@2x.png */,
+				145541A715FC261D00282D5E /* Icon.png */,
+				145541A815FC261D00282D5E /* Icon@2x.png */,
+				145541A915FC261D00282D5E /* sticker-eyes.png */,
+				145541AA15FC261D00282D5E /* sticker-mouth.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		148A651215FBB08A008C9D35 = {
+			isa = PBXGroup;
+			children = (
+				148A652715FBB08A008C9D35 /* Demo */,
+				148A652015FBB08A008C9D35 /* Frameworks */,
+				148A651E15FBB08A008C9D35 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		148A651E15FBB08A008C9D35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				148A651D15FBB08A008C9D35 /* FMStickerEngineDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		148A652015FBB08A008C9D35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				145541B115FC26BF00282D5E /* FMStickerEngine.framework */,
+				1455420A15FC2DFA00282D5E /* CoreMedia.framework */,
+				1455420B15FC2DFA00282D5E /* CoreVideo.framework */,
+				1455420C15FC2DFA00282D5E /* CoreImage.framework */,
+				1455420D15FC2DFA00282D5E /* AVFoundation.framework */,
+				1455420215FC290700282D5E /* QuartzCore.framework */,
+				1455413A15FC0DAD00282D5E /* AssetsLibrary.framework */,
+				148A652115FBB08A008C9D35 /* UIKit.framework */,
+				148A652315FBB08A008C9D35 /* Foundation.framework */,
+				148A652515FBB08A008C9D35 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		148A652715FBB08A008C9D35 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				148A653015FBB08A008C9D35 /* AppDelegate.h */,
+				148A653115FBB08A008C9D35 /* AppDelegate.m */,
+				148A653915FBB08A008C9D35 /* ViewController.h */,
+				148A653A15FBB08A008C9D35 /* ViewController.m */,
+				148A653315FBB08A008C9D35 /* MainStoryboard_iPhone.storyboard */,
+				148A653615FBB08A008C9D35 /* MainStoryboard_iPad.storyboard */,
+				1455413315FC0AF800282D5E /* 3dParty */,
+				145541A415FC261D00282D5E /* Images */,
+				148A652815FBB08A008C9D35 /* Supporting Files */,
+			);
+			name = Demo;
+			path = FMStickerEngineDemo;
+			sourceTree = "<group>";
+		};
+		148A652815FBB08A008C9D35 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				148A652915FBB08A008C9D35 /* FMStickerEngineDemo-Info.plist */,
+				148A652A15FBB08A008C9D35 /* InfoPlist.strings */,
+				148A652D15FBB08A008C9D35 /* main.m */,
+				148A652F15FBB08A008C9D35 /* FMStickerEngineDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		148A651C15FBB08A008C9D35 /* FMStickerEngineDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 148A653E15FBB08A008C9D35 /* Build configuration list for PBXNativeTarget "FMStickerEngineDemo" */;
+			buildPhases = (
+				148A651915FBB08A008C9D35 /* Sources */,
+				148A651A15FBB08A008C9D35 /* Frameworks */,
+				148A651B15FBB08A008C9D35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMStickerEngineDemo;
+			productName = FMStickerEngineDemo;
+			productReference = 148A651D15FBB08A008C9D35 /* FMStickerEngineDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		148A651415FBB08A008C9D35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Flubber Media Ltd";
+			};
+			buildConfigurationList = 148A651715FBB08A008C9D35 /* Build configuration list for PBXProject "FMStickerEngineDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 148A651215FBB08A008C9D35;
+			productRefGroup = 148A651E15FBB08A008C9D35 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				148A651C15FBB08A008C9D35 /* FMStickerEngineDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		148A651B15FBB08A008C9D35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148A652C15FBB08A008C9D35 /* InfoPlist.strings in Resources */,
+				148A653515FBB08A008C9D35 /* MainStoryboard_iPhone.storyboard in Resources */,
+				148A653815FBB08A008C9D35 /* MainStoryboard_iPad.storyboard in Resources */,
+				1455413815FC0B0D00282D5E /* SVProgressHUD.bundle in Resources */,
+				145541AB15FC261D00282D5E /* Icon-72.png in Resources */,
+				145541AC15FC261D00282D5E /* Icon-72@2x.png in Resources */,
+				145541AD15FC261D00282D5E /* Icon.png in Resources */,
+				145541AE15FC261D00282D5E /* Icon@2x.png in Resources */,
+				145541AF15FC261D00282D5E /* sticker-eyes.png in Resources */,
+				145541B015FC261D00282D5E /* sticker-mouth.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		148A651915FBB08A008C9D35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148A652E15FBB08A008C9D35 /* main.m in Sources */,
+				148A653215FBB08A008C9D35 /* AppDelegate.m in Sources */,
+				148A653B15FBB08A008C9D35 /* ViewController.m in Sources */,
+				1455413915FC0B0D00282D5E /* SVProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		148A652A15FBB08A008C9D35 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				148A652B15FBB08A008C9D35 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		148A653315FBB08A008C9D35 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				148A653415FBB08A008C9D35 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		148A653615FBB08A008C9D35 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				148A653715FBB08A008C9D35 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		148A653C15FBB08A008C9D35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		148A653D15FBB08A008C9D35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		148A653F15FBB08A008C9D35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FMStickerEngineDemo/FMStickerEngineDemo-Prefix.pch";
+				INFOPLIST_FILE = "FMStickerEngineDemo/FMStickerEngineDemo-Info.plist";
+				PRODUCT_NAME = FMStickerEngineDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		148A654015FBB08A008C9D35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FMStickerEngineDemo/FMStickerEngineDemo-Prefix.pch";
+				INFOPLIST_FILE = "FMStickerEngineDemo/FMStickerEngineDemo-Info.plist";
+				PRODUCT_NAME = FMStickerEngineDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		148A651715FBB08A008C9D35 /* Build configuration list for PBXProject "FMStickerEngineDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				148A653C15FBB08A008C9D35 /* Debug */,
+				148A653D15FBB08A008C9D35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		148A653E15FBB08A008C9D35 /* Build configuration list for PBXNativeTarget "FMStickerEngineDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				148A653F15FBB08A008C9D35 /* Debug */,
+				148A654015FBB08A008C9D35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 148A651415FBB08A008C9D35 /* Project object */;
+}
