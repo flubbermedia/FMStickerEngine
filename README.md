@@ -25,4 +25,4 @@ Documentation can be [browsed online](http://github.flubbermedia.com/FMStickerEn
 
 Credits
 -------
-FMPurchaseManager was created by [Maurizio Cremaschi](http://cremaschi.me) and [Andrea Ottolina](http://andreaottolina.com) for [Flubber Media Ltd](http://flubbermedia.com).
+FMStickerEngine was created by [Maurizio Cremaschi](http://cremaschi.me) and [Andrea Ottolina](http://andreaottolina.com) for [Flubber Media Ltd](http://flubbermedia.com).
