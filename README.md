@@ -1,7 +1,7 @@
 Purpose
 -------
 
-**FMStickerEngine** is a framework build on top of the face detection API introduced in iOS 5. It creates a UIView that displays the video feed coming from the camera and overlay a set of images to any face detected in the video, in real time.
+**FMStickerEngine** is a framework built on top of the face detection API introduced in iOS 5. It creates a UIView that displays the video feed coming from the camera and overlay a set of images to any face detected in the video, in real time.
 A picture with the final composition is then returned when the shutter button is pressed.
 
 For further details about the implementation, please check the documentation provided with the main two classes FMStickerCaptureView and FMSticker.
