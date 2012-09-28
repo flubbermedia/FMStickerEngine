@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
 	</head>
 	<body>
 		<header id="top_header">
@@ -60,6 +60,8 @@
 	
 	<option value="//api/name/pauseFaceDetection">&nbsp;&nbsp;&nbsp;&nbsp;- pauseFaceDetection</option>
 	
+	<option value="//api/name/processPicture:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- processPicture:completion:</option>
+	
 	<option value="//api/name/resumeFaceDetection">&nbsp;&nbsp;&nbsp;&nbsp;- resumeFaceDetection</option>
 	
 	<option value="//api/name/startCapture">&nbsp;&nbsp;&nbsp;&nbsp;- startCapture</option>
@@ -88,9 +90,11 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializing a capture session">Initializing a capture session</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing face detection">Managing face detection</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Manage face detection">Manage face detection</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing camera">Managing camera</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Manage camera">Manage camera</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Apply stickers to an image">Apply stickers to an image</a></span></li>
 	
 </ul></li>
 
@@ -121,6 +125,8 @@
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pauseFaceDetection">pauseFaceDetection</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/processPicture:completion:">processPicture:completion:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resumeFaceDetection">resumeFaceDetection</a></span></li>
 	
@@ -250,8 +256,8 @@ something went wrong.</p>
 						</ul>
 						
 						
-						<a title="Managing face detection" name="task_Managing face detection"></a>
-						<h3 class="subsubtitle task-title">Managing face detection</h3>
+						<a title="Manage face detection" name="task_Manage face detection"></a>
+						<h3 class="subsubtitle task-title">Manage face detection</h3>
 
 						<ul class="task-list">
 							<li>
@@ -272,8 +278,8 @@ something went wrong.</p>
 						</ul>
 						
 						
-						<a title="Managing camera" name="task_Managing camera"></a>
-						<h3 class="subsubtitle task-title">Managing camera</h3>
+						<a title="Manage camera" name="task_Manage camera"></a>
+						<h3 class="subsubtitle task-title">Manage camera</h3>
 
 						<ul class="task-list">
 							<li>
@@ -286,6 +292,21 @@ something went wrong.</p>
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/takePicture:">&ndash;&nbsp;takePicture:</a></code>
+		<span class="tooltip"><p>Takes the picture from the camera and starts the image manipulation process.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Apply stickers to an image" name="task_Apply stickers to an image"></a>
+						<h3 class="subsubtitle task-title">Apply stickers to an image</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/processPicture:completion:">&ndash;&nbsp;processPicture:completion:</a></code>
 		<span class="tooltip"><p>Takes the picture and starts the image manipulation process.</p></span>
 	</span>
 	
@@ -540,6 +561,59 @@ development by using the bundle ID and the <a href="#//api/name/license">license
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/processPicture:completion:" title="processPicture:completion:"></a>
+	<h3 class="subsubtitle method-title">processPicture:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Takes the picture and starts the image manipulation process.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)processPicture:(UIImage *)<em>image</em> completion:(void ( ^ ) ( UIImage *picture , NSError *error ))<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>image</em></dt>
+			<dd><p>A UIImage on which the <a href="#//api/name/sticker">sticker</a> will be applied. You should supply
+an image with the correct orientation.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>A block which is called when the detection process is
+completed. It returns an UIImage.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FMStickerCaptureView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/resumeFaceDetection" title="resumeFaceDetection"></a>
 	<h3 class="subsubtitle method-title">resumeFaceDetection</h3>
 	
@@ -678,7 +752,7 @@ development by using the bundle ID and the <a href="#//api/name/license">license
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Takes the picture and starts the image manipulation process.</p>
+		<p>Takes the picture from the camera and starts the image manipulation process.</p>
 	</div>		
 	
     
@@ -692,7 +766,8 @@ development by using the bundle ID and the <a href="#//api/name/license">license
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>completion</em></dt>
-			<dd><p>A block which is called when the detection process is completed. It returns an UIImage.</p></dd>
+			<dd><p>A block which is called when the detection process is
+completed. It returns an UIImage.</p></dd>
 		</dl>
 		
 	</div>
@@ -730,9 +805,9 @@ development by using the bundle ID and the <a href="#//api/name/license">license
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Flubber Media. All rights reserved. (Last updated: 2012-09-17)</span><br />
+						<p><span class="copyright">&copy; 2012 Flubber Media. All rights reserved. (Last updated: 2012-09-28)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						
 					</div>
 				</div>
