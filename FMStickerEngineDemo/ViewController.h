@@ -10,8 +10,9 @@
 
 @class FMStickerCaptureView;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIPopoverControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet FMStickerCaptureView *captureView;
+@property (strong, nonatomic) IBOutlet UIButton *photoLibraryButton;
 
 @end

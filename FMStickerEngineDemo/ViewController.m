@@ -13,6 +13,8 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) UIPopoverController *photoLibraryPopover;
+
 @end
 
 @implementation ViewController
@@ -56,16 +58,18 @@
         
         if (error == nil)
         {
-            //no errors, save the picture
-            ALAssetsLibrary *assetsLibrary = [ALAssetsLibrary new];
-            [assetsLibrary writeImageToSavedPhotosAlbum:picture.CGImage orientation:(ALAssetOrientation)picture.imageOrientation completionBlock:
-             ^(NSURL *assetURL, NSError *error){
+            //no errors, save the picture            
+            [self saveImageToPhotoLibrary:picture completion:^(NSError *error) {
                 if (error == nil) {
                     [SVProgressHUD showSuccessWithStatus:@""];
                 } else {
                     [SVProgressHUD showErrorWithStatus:@""];
                 }
             }];
+        }
+        else
+        {
+            [SVProgressHUD showErrorWithStatus:@""];
         }
         
         //in any case resume the detection and hide the activity view, we finished to work
@@ -79,6 +83,90 @@
     [_captureView switchCamera:^{
         
     }];
+}
+
+- (IBAction)showPhotoLibrary:(id)sender
+{
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    if (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone)
+    {
+        [self presentModalViewController:picker animated:YES];
+    }
+    else
+    {
+        _photoLibraryPopover = [[UIPopoverController alloc] initWithContentViewController:picker];
+        _photoLibraryPopover.delegate = self;
+        [_photoLibraryPopover presentPopoverFromRect:_photoLibraryButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    }
+}
+#pragma mark - UIImagePickerControllerDelegate
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
+    [_captureView pauseFaceDetection];
+    
+    if (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone)
+    {
+        [self dismissModalViewControllerAnimated:YES];
+    }
+    else
+    {
+        [_photoLibraryPopover dismissPopoverAnimated:NO];
+        _photoLibraryPopover = nil;
+    }
+    
+    double delayInSeconds = 0.3;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        
+#warning Uncomment this when the framework is rebuilt
+        
+//        UIImage *image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+//        
+//        [_caputureView processImage:image completion:^{
+//            if (error == nil)
+//            {
+//                [self saveImageToPhotoLibrary:picture completion:^(NSError *error) {
+//                    if (error == nil) {
+//                        [SVProgressHUD showSuccessWithStatus:@""];
+//                    } else {
+//                        [SVProgressHUD showErrorWithStatus:@""];
+//                    }
+//                }];
+//            }
+//            else
+//            {
+//                [SVProgressHUD showErrorWithStatus:@""];
+//            }
+//        }];
+    });
+}
+
+#pragma mark - UIPopoverControllerDelegate
+
+- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
+{
+    if (popoverController == _photoLibraryPopover)
+    {
+        _photoLibraryPopover = nil;
+    }
+}
+
+#pragma mark - Utilities
+
+- (void)saveImageToPhotoLibrary:(UIImage *)image completion:(void (^)(NSError *error))completion
+{
+    //no errors, save the picture
+    ALAssetsLibrary *assetsLibrary = [ALAssetsLibrary new];
+    [assetsLibrary writeImageToSavedPhotosAlbum:image.CGImage orientation:(ALAssetOrientation)image.imageOrientation completionBlock:
+     ^(NSURL *assetURL, NSError *error){
+         if (completion)
+             completion(error);
+     }];
 }
 
 @end
