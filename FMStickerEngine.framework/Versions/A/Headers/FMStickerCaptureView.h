@@ -35,9 +35,9 @@
 
 @interface FMStickerCaptureView : UIView <AVCaptureVideoDataOutputSampleBufferDelegate>
 
-/**---------------------------------------------------------------------------------------
+/**-----------------------------------------------------------------------------
  * @name Public properties
- *  ---------------------------------------------------------------------------------------
+ *  ----------------------------------------------------------------------------
  */
 
 /** The FMSticker object currently used.
@@ -56,9 +56,9 @@
 
 @property (assign, nonatomic) BOOL showFlash;
 
-/**---------------------------------------------------------------------------------------
+/**-----------------------------------------------------------------------------
  * @name Initializing a capture session
- *  ---------------------------------------------------------------------------------------
+ *  ----------------------------------------------------------------------------
  */
 
 /** Sets the license string for the authorised bundle ID.
@@ -87,9 +87,9 @@
 
 - (void)startCapture;
 
-/**---------------------------------------------------------------------------------------
- * @name Managing face detection
- *  ---------------------------------------------------------------------------------------
+/**-----------------------------------------------------------------------------
+ * @name Manage face detection
+ *  ----------------------------------------------------------------------------
  */
 
 /** Pause the face detection.
@@ -106,9 +106,9 @@
 
 - (void)resumeFaceDetection;
 
-/**---------------------------------------------------------------------------------------
- * @name Managing camera
- *  ---------------------------------------------------------------------------------------
+/**-----------------------------------------------------------------------------
+ * @name Manage camera
+ *  ----------------------------------------------------------------------------
  */
 
 /** Switch between the front and back facing camera.
@@ -117,10 +117,25 @@
 
 - (void)switchCamera:(void (^)(void))completion;
 
-/** Takes the picture and starts the image manipulation process.
- @param completion A block which is called when the detection process is completed. It returns an UIImage.
+/** Takes the picture from the camera and starts the image manipulation process.
+ @param completion A block which is called when the detection process is 
+ completed. It returns an UIImage.
  */
 
 - (void)takePicture:(void (^)(UIImage *picture, NSError *error))completion;
+
+/**-----------------------------------------------------------------------------
+ * @name Apply stickers to an image
+ *  ----------------------------------------------------------------------------
+ */
+
+/** Takes the picture and starts the image manipulation process.
+ @param image A UIImage on which the sticker will be applied. You should supply 
+ an image with the correct orientation.
+ @param completion A block which is called when the detection process is 
+ completed. It returns an UIImage.
+ */
+
+- (void)processPicture:(UIImage *)image completion:(void (^)(UIImage *picture, NSError *error))completion;
 
 @end
