@@ -56,6 +56,22 @@
 
 @property (assign, nonatomic) BOOL showFlash;
 
+/** The number of stickers currently detected
+ 
+ This property indicates the number of stickers detected in the video feed, in 
+ real time.
+ */
+
+@property (readonly) NSInteger numberOfStickerDetected;
+
+/** A view positioned between the previewLayer and the stickers.
+ 
+ This view can be used to display additional items between the video feed and
+ the stickers.
+ */
+
+@property (readonly) UIView *accessoryView;
+
 /**-----------------------------------------------------------------------------
  * @name Initializing a capture session
  *  ----------------------------------------------------------------------------
