@@ -1,18 +1,18 @@
 <?xml version="1.0" standalone="no"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
-    <id>http://github.flubbermedia.com/FMStickerEngine/FMStickerEngine.atom/20120928134644</id>
+    <id>http://github.flubbermedia.com/FMStickerEngine/FMStickerEngine.atom/20130529154946</id>
     <title type="text">FMStickerEngine Documentation</title>
-    <rights>Copyright © 2012 Flubber Media. All rights reserved.</rights>
+    <rights>Copyright © 2013 Flubber Media. All rights reserved.</rights>
     <link rel="self" href="http://github.flubbermedia.com/FMStickerEngine/FMStickerEngine.atom"></link>
     <docset:publisherName>Flubber Media</docset:publisherName>
     <docset:publisherID>com.flubbermedia.documentation</docset:publisherID>
-    <updated>2012-09-28T13:46:44+01:00</updated>
+    <updated>2013-05-29T15:49:46+01:00</updated>
     <entry>
-        <id>tag:github.flubbermedia.com,2012-09-28:com.flubbermedia.FMStickerEngine/1.0.0</id>
+        <id>tag:github.flubbermedia.com,2013-05-29:com.flubbermedia.FMStickerEngine/1.0.0</id>
         <title type="text">FMStickerEngine Documentation</title>
-        <updated>2012-09-28T13:46:44+01:00</updated>
+        <updated>2013-05-29T15:49:46+01:00</updated>
         <content type="text">FMStickerEngine Documentation (v1.0.0)</content>
-        <link rel="enclosure" type="application/octet-stream" href="http://github.flubbermedia.com/FMStickerEngine/com.flubbermedia.FMStickerEngine-1.0.xar" length="41854"></link>
+        <link rel="enclosure" type="application/octet-stream" href="http://github.flubbermedia.com/FMStickerEngine/com.flubbermedia.FMStickerEngine-1.0.xar" length="42827"></link>
         <docset:identifier>com.flubbermedia.FMStickerEngine</docset:identifier>
         <docset:version>1.0.0</docset:version>
         <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>
